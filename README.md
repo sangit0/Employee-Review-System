@@ -28,12 +28,10 @@ This is an interview challengs. Please feel free to fork. Pull Requests will be 
 
 ### Before running the seed or running the backend copy .env.example to .env and setup your Database information.
 
-    ``` bash
             #cd to backend folder
             yarn md-seed run
             #for dropping the database
             yarn md-seed run --dropdb
-    ```
 
 ### Login (if you use DB seed)
 
