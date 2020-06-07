@@ -1,0 +1,24 @@
+type User {
+  id: ID!
+  email: String!
+  password: String!
+  role: String
+  name: String
+}
+
+type Query {
+  Users: [User]
+  User(email: String): User
+}
+
+input UserInput {
+  email: String!
+  password: String!
+  name: String
+  role: String
+}
+
+type Mutation {
+  createUser(userInput: UserInput): AuthData @hasRoleOf(role: "admin")
+  updateUser(id: String!, userInput: UserInput): User @hasRoleOf(role: "admin")
+}

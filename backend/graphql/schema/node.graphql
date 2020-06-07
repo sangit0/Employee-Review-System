@@ -1,0 +1,5 @@
+
+interface Node {
+  createdAt: String
+  updatedAt: String
+}

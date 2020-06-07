@@ -1,0 +1,15 @@
+type AuthData {
+  token: Token!
+  user: User!
+}
+type Token {
+  tokenType: String!
+  accessToken: String!
+  refreshToken: String!
+  expiresIn: String!
+}
+
+type Mutation {
+  register(userInput: UserInput!): AuthData
+  login(email: String!, password: String!): AuthData
+}

@@ -1,0 +1,24 @@
+type Employee {
+  id: ID!
+  email: String
+  role: String
+  name: String
+}
+type Query {
+  Employees: [Employee]
+  Employee(email: String): Employee
+}
+input EmployeeInput {
+  email: String!
+  password: String
+  name: String
+  role: String
+}
+
+type Mutation {
+  createEmployee(employeeInput: EmployeeInput): Employee
+    @hasRoleOf(role: "admin")
+  updateEmployee(id: String!, employeeInput: EmployeeInput): Employee
+    @hasRoleOf(role: "admin")
+  deleteEmployee(id: String!): Employee @hasRoleOf(role: "admin")
+}

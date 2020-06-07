@@ -1,0 +1,18 @@
+type Query {
+  Performances: [Performance]
+  Performance(id: String!): Performance
+}
+
+type Performance implements Node {
+  id: ID!
+  name: String
+  createdAt: String
+  updatedAt: String
+}
+
+type Mutation {
+  addPerformance(name: String): Performance @hasRoleOf(role: "admin")
+  updatePerformance(id: String, name: String): Performance
+    @hasRoleOf(role: "admin")
+  deletePerformance(id: String!): Performance @hasRoleOf(role: "admin")
+}

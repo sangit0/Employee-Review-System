@@ -1,0 +1,34 @@
+type Query {
+  UserAssignedEmployee(_id: String!): [UserAssigned]
+  UserAssignedEmployeeOnlyFeedBack(
+    _id: String!
+    assignedEmployee: InputAssignedEmployee!
+  ): [UserAssigned]
+}
+
+type UserAssigned {
+  assigned_employee: [AssignedEmployee]
+}
+
+type AssignedEmployee {
+  _id: String
+  employee_id: User
+  feedback: Boolean
+}
+
+input InputAssignedEmployee {
+  employee_id: String
+  feedback: Boolean
+}
+
+type Mutation {
+  assignEmployee(
+    _id: String!
+    assigned_employee: [InputAssignedEmployee]
+  ): UserAssigned @hasRoleOf(role: "admin")
+  updateAssignEmployee(
+    _id: String!
+    assigned_document_id: String!
+    assigned_employee: InputAssignedEmployee
+  ): UserAssigned @hasRoleOf(role: "admin")
+}

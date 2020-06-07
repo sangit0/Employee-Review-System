@@ -1,0 +1,35 @@
+type Query {
+  EmployeeReviews: [EmployeeReview]
+  EmployeeReview(
+    feedback_from_employee_id: String!
+    feedback_to_employee_id: String!
+  ): EmployeeReview
+}
+
+input Review {
+  performance_type: String
+  feedback: String
+  performance: String
+}
+type PerformanceReview {
+  performance_type: String
+  feedback: String
+  performance: String #performance_id
+}
+
+type EmployeeReview implements Node {
+  id: ID!
+  feedback_from_employee_id: String
+  feedback_to_employee_id: String
+  performance_reviews: [PerformanceReview]
+  createdAt: String
+  updatedAt: String
+}
+
+type Mutation {
+  addEmployeeReview(
+    feedback_from_employee_id: String!
+    feedback_to_employee_id: String!
+    performance_reviews: [Review]
+  ): EmployeeReview
+}
