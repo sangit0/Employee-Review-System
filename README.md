@@ -22,11 +22,11 @@ This is an interview challengs. Please feel free to fork. Pull Requests will be 
 7. Mongo DB Seeder for testing
 8. Login and Register module for user
 
-## In this project, we have 2 roles where every role has some specific feature. Every query in this project is using GraphQL including user authentication and role based access. The project using a boilerplate made by me(sangit) which is using stack of Express-GraphQL-Mongo (https://github.com/sangit0/Express-graphql-mongodb-boilerplate).
+### In this project, we have 2 roles where every role has some specific feature. Every query in this project is using GraphQL including user authentication and role based access. The project using a boilerplate made by me(sangit) which is using stack of Express-GraphQL-Mongo (https://github.com/sangit0/Express-graphql-mongodb-boilerplate).
 
 ## How to use the Seeder Commands
 
-# Before running the seed or running the backend copy .env.example to .env and setup your Database information.
+### Before running the seed or running the backend copy .env.example to .env and setup your Database information.
 
     ``` bash
             #cd to backend folder
@@ -35,7 +35,7 @@ This is an interview challengs. Please feel free to fork. Pull Requests will be 
             yarn md-seed run --dropdb
     ```
 
-# Login (if you use DB seed)
+### Login (if you use DB seed)
 
     user: admin@sangit.info  (admin user)
     pass: secret
