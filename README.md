@@ -1,39 +1,54 @@
 # Full Stack Developer Challenge
+
 This is an interview challengs. Please feel free to fork. Pull Requests will be ignored.
 
-## Requirements
-Design a web application that allows employees to submit feedback toward each other's performance review.
+# Employee Review System
 
-*Partial solutions are acceptable.*  It is not necessary to submit a complete solution that implements every requirement.
+### Techstack
 
-### Admin view
-* Add/remove/update/view employees
-* Add/update/view performance reviews
-* Assign employees to participate in another employee's performance review
+- React.js
+- Express.js
+- MongoDB
+- Graphql
 
-### Employee view
-* List of performance reviews requiring feedback
-* Submit feedback
+# Features & Implemented Module
 
-## Challenge Scope
-* High level description of design and technologies used
-* Server side API (using a programming language and/or framework of your choice)
-  * Implementation of at least 3 API calls
-  * Most full stack web developers at PayPay currently use Java, Ruby on Rails, or Node.js on the server(with MySQL for the database), but feel free to use other tech if you prefer
-* Web app
-  * Implementation of 2-5 web pages using a modern web framework (e.g. React or Angular) that talks to server side
-    * This should integrate with your API, but it's fine to use static responses for some of it 
-* Document all assumptions made
-* Complete solutions aren't required, but what you do submit needs to run.
+1. Add/remove/update/view employees
+2. Add/update/view performance reviews
+3. Assign employees to participate in another employee's performance review
+4. List of performance reviews requiring feedback (only employee access)
+5. Submit feedback (only employee access)
+6. Role base Access reusable access module for both frontend and backend.
+7. Mongo DB Seeder for testing
+8. Login and Register module for user
 
-## How to complete this challenge
-* Fork this repo in github
-* Complete the design and code as defined to the best of your abilities
-* Place notes in your code to help with clarity where appropriate. Make it readable enough to present to the PayPay interview team
-* Complete your work in your own github repo and send the results to us and/or present them during your interview
+## In this project, we have 2 roles where every role has some specific feature. Every query in this project is using GraphQL including user authentication and role based access. The project using a boilerplate made by me(sangit) which is using stack of Express-GraphQL-Mongo (https://github.com/sangit0/Express-graphql-mongodb-boilerplate).
 
-## What are we looking for? What does this prove?
-* Assumptions you make given limited requirements
-* Technology and design choices
-* Identify areas of your strengths
-* This is not a pass or fail test, this will serve as a common ground that we can deep dive together into specific issues
+## How to use the Seeder Commands
+
+# Before running the seed or running the backend copy .env.example to .env and setup your Database information.
+
+    ``` bash
+            #cd to backend folder
+            yarn md-seed run
+            #for dropping the database
+            yarn md-seed run --dropdb
+    ```
+
+# Login (if you use DB seed)
+
+    user: admin@sangit.info  (admin user)
+    pass: secret
+
+    user: user2@gmail.info  (normal user)
+    pass: secret
+
+### Screenshots
+
+![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/login.png "Screenshot")
+![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/create-employee.png "Screenshot")
+![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/assign-employee.png "Screenshot")
+![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/performance-page.png "Screenshot")
+![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/edit-performances.png "Screenshot")
+![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/submit-review-1.png "Screenshot")
+![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/submit-review-2.png "Screenshot")
