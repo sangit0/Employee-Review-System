@@ -22,7 +22,7 @@ This is an interview challengs. Please feel free to fork. Pull Requests will be 
 7. Mongo DB Seeder for testing
 8. Login and Register module for user
 
-### In this project, we have 2 roles where every role has some specific feature. Every query in this project is using GraphQL including user authentication and role based access. The project using a boilerplate made by me(sangit) which is using stack of Express-GraphQL-Mongo (https://github.com/sangit0/Express-graphql-mongodb-boilerplate).
+### In this project, we have 2 roles where every role has some specific feature. Every query in this project is using GraphQL including user authentication and role based access. The project using a boilerplate created by me which is using stack of Express-GraphQL-Mongo (https://github.com/sangit0/Express-graphql-mongodb-boilerplate).
 
 ## How to use the Seeder Commands
 
