@@ -41,12 +41,4 @@ This is an interview challengs. Please feel free to fork. Pull Requests will be 
     user: user2@gmail.info  (normal user)
     pass: secret
 
-### Screenshots
 
-![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/login.png "Screenshot")
-![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/create-employee.png "Screenshot")
-![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/assign-employee.png "Screenshot")
-![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/performance-page.png "Screenshot")
-![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/edit-performances.png "Screenshot")
-![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/submit-review-1.png "Screenshot")
-![alt text](https://github.com/sangit0/FullStackEngineerChallenge/blob/master/screenshots/submit-review-2.png "Screenshot")
